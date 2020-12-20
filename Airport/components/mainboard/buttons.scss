@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+}
+
+.btn__departures{
+    background-color: #FFF;
+    width: 50%;
+    height: 60px;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border: none;
+    outline: none;
+
+    &-title{
+        color: #73CBFA;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.btn__departures:active{
+    background-color: #73CBFA;
+
+    >.btn__departures-title{
+        color: #FFF;
+    }
+
+    >i.fas.fa-plane-departure::before{
+        color: #FFF;
+    }
+}
+
+.btn__arrivals{
+    background-color:#FFF;
+    width: 50%;
+    height: 60px;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border: none;
+    outline: none;
+
+    &-title{
+        color: #73CBFA;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+.btn__arrivals:active{
+    background-color:#73CBFA;
+
+    >.btn__arrivals-title{
+        color: #FFF;
+    }
+
+    >i.fas.fa-plane-arrival::before{
+        color: #FFF;
+    }
+}
+
+i.fas.fa-plane-departure::before{
+    font-size: 20px;
+    margin: 15px;
+    color: #73CBFA;
+}
+
+i.fas.fa-plane-arrival::before{
+    font-size: 20px;
+    margin: 15px;
+    color: #73CBFA;
+}
